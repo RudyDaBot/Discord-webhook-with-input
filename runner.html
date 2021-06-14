@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set title here</title>
+    <script src = "script.js"></script>
+    <style>
+       .btn {
+    
+    /*This comes with the repo however you can change it*/
+    display: block;
+    padding: 15px 20px;
+font-size: 20px;
+text-align: center;
+cursor: pointer;
+outline: none;
+color: #fff;
+background-color: #4CAF50;
+border: none;
+border-radius: 15px;
+box-shadow: 0 9px #999;
+
+margin-top: 16px;
+}
+
+.btn:hover {background-color: #3e8e41}
+
+.btn:active {
+background-color: #3e8e41;
+box-shadow: 0 5px #666;
+transform: translateY(4px);
+}
+
+/*This sets the height of the text field. you can change this to fit your requirements*/
+
+.box
+{
+    height:25px;
+    width: 250px;
+    font-size:17pt;
+}
+
+
+    </style>
+</head>
+<body>
+    <!-- sends msg, after either pressing enter or pressing the send key-->
+    <input class = "box" id="userInput" type="text" onchange="sendMsg()">
+    <button onclick = "sendMsg()" class="btn" > Send </button>
+</body>
+</html>
